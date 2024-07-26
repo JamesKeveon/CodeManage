@@ -1,0 +1,448 @@
+object Form1: TForm1
+  Left = 466
+  Height = 700
+  Top = 165
+  Width = 747
+  Caption = 'CodeManage'
+  ClientHeight = 700
+  ClientWidth = 747
+  Font.Height = -12
+  OnCreate = FormCreate
+  LCLVersion = '3.4.0.0'
+  object BtnCodeDownload: TButton
+    Left = 75
+    Height = 25
+    Top = 88
+    Width = 75
+    Caption = '代码下载'
+    TabOrder = 0
+    OnClick = BtnCodeDownloadClick
+  end
+  object BtnCodeUpdate: TButton
+    Left = 181
+    Height = 25
+    Top = 88
+    Width = 75
+    Caption = '代码更新'
+    TabOrder = 1
+    OnClick = BtnCodeUpdateClick
+  end
+  object BtnFuncCompare: TButton
+    Left = 75
+    Height = 25
+    Top = 128
+    Width = 75
+    Caption = '差异比较'
+    TabOrder = 2
+    OnClick = BtnFuncCompareClick
+  end
+  object BtnFileAutoMove: TButton
+    Left = 181
+    Height = 25
+    Top = 128
+    Width = 75
+    Caption = '文件迁移'
+    TabOrder = 3
+    OnClick = BtnFileAutoMoveClick
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 17
+    Top = 20
+    Width = 48
+    Caption = '工作路径'
+    ParentColor = False
+  end
+  object EdtWorkpath: TEdit
+    Left = 75
+    Height = 25
+    Top = 16
+    Width = 587
+    TabOrder = 4
+    OnChange = EdtWorkpathChange
+  end
+  object Tips: TRichEdit
+    Left = 75
+    Height = 384
+    Top = 304
+    Width = 576
+    HideSelection = False
+    OnChange = TipsChange
+    ReadOnly = True
+    ScrollBars = ssAutoBoth
+    TabOrder = 5
+    ZoomFactor = 1
+  end
+  object BtnO45Develop: TButton
+    Left = 293
+    Height = 25
+    Top = 88
+    Width = 75
+    Caption = '开发资管'
+    TabOrder = 6
+    OnClick = BtnO45DevelopClick
+    OnMouseEnter = BtnO45DevelopMouseEnter
+  end
+  object BtnAM4Develop: TButton
+    Left = 405
+    Height = 25
+    Hint = '开发模式是将UFT-Metadata、UFT-Structure、UFT-Atom、UFT-Factor、UFT-Business拷贝到原始工程下.'
+    Top = 88
+    Width = 75
+    Caption = '开发银信'
+    TabOrder = 7
+    OnClick = BtnAM4DevelopClick
+  end
+  object BtnO45Commit: TButton
+    Left = 293
+    Height = 25
+    Hint = '代码提交是将目录UFT-Metadata、UFT-Structure、UFT-Atom、UFT-Factor、UFT-Business 中的文件从原始工程还原出来。'
+    Top = 128
+    Width = 75
+    Caption = '递交资管'
+    TabOrder = 8
+    OnClick = BtnO45CommitClick
+  end
+  object BtnAM4Commit: TButton
+    Left = 405
+    Height = 25
+    Hint = '代码提交是将目录UFT-Metadata、UFT-Structure、UFT-Atom、UFT-Factor、UFT-Business 中的文件从原始工程还原出来。'
+    Top = 128
+    Width = 75
+    Caption = '递交银信'
+    TabOrder = 9
+    OnClick = BtnAM4CommitClick
+  end
+  object EdtFuncName: TEdit
+    Left = 75
+    Height = 25
+    Hint = '输入函数中文名就操作单个函数，如果输入文件名后缀是txt则读取文件进行批量操作'
+    Top = 171
+    Width = 587
+    TabOrder = 10
+    OnChange = EdtFuncNameChange
+  end
+  object Label2: TLabel
+    Left = 5
+    Height = 17
+    Top = 176
+    Width = 65
+    Caption = '函数/文件名'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = -11
+    Height = 25
+    Top = 464
+    Width = 75
+    Action = Action1
+    TabOrder = 11
+    OnClick = Button1Click
+  end
+  object EditUserID: TEdit
+    Left = 72
+    Height = 25
+    Top = 699
+    Width = 181
+    TabOrder = 12
+    Visible = False
+    OnChange = EditUserIDChange
+  end
+  object EditPasswd: TEdit
+    Left = 392
+    Height = 25
+    Top = 699
+    Width = 272
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 13
+    Visible = False
+  end
+  object Label3: TLabel
+    Left = 28
+    Height = 17
+    Top = 699
+    Width = 36
+    Caption = '域账号'
+    ParentColor = False
+    Visible = False
+  end
+  object Label4: TLabel
+    Left = 347
+    Height = 17
+    Top = 699
+    Width = 36
+    Caption = '域密码'
+    ParentColor = False
+    Visible = False
+  end
+  object FuncCount: TButton
+    Left = 517
+    Height = 25
+    Top = 128
+    Width = 88
+    Caption = '函数统计'
+    TabOrder = 14
+    OnClick = FuncCountClick
+  end
+  object BtnClearShow: TButton
+    Left = 672
+    Height = 25
+    Top = 312
+    Width = 54
+    Caption = '清空显示'
+    TabOrder = 15
+    OnClick = BtnClearShowClick
+  end
+  object AutoMoveFromAM4: TCheckBox
+    Left = 405
+    Height = 21
+    Top = 53
+    Width = 78
+    Caption = '从银信迁移'
+    TabOrder = 16
+    OnChange = AutoMoveFromAM4Change
+  end
+  object CheckOpLS: TCheckBox
+    Left = 288
+    Height = 21
+    Top = 53
+    Width = 98
+    Caption = '04LS下载/更新'
+    TabOrder = 17
+    OnChange = CheckOpLSChange
+  end
+  object Label5: TLabel
+    Left = 16
+    Height = 17
+    Top = 309
+    Width = 48
+    Caption = '日志信息'
+    ParentColor = False
+  end
+  object BtnCreateBrch: TButton
+    Left = 475
+    Height = 25
+    Top = 204
+    Width = 75
+    Caption = '拉分支'
+    TabOrder = 18
+    OnClick = BtnCreateBrchClick
+  end
+  object BtnSwithTrunk: TButton
+    Left = 587
+    Height = 25
+    Top = 204
+    Width = 75
+    Caption = '切回主干'
+    TabOrder = 19
+    OnClick = BtnSwithTrunkClick
+  end
+  object Label6: TLabel
+    Left = 75
+    Height = 17
+    Top = 212
+    Width = 48
+    Caption = '需求编号'
+    ParentColor = False
+    OnClick = Label6Click
+  end
+  object EdtReqNum: TEdit
+    Left = 128
+    Height = 25
+    Top = 208
+    Width = 160
+    TabOrder = 20
+    OnChange = EdtReqNumChange
+  end
+  object Label7: TLabel
+    Left = 309
+    Height = 17
+    Top = 212
+    Width = 24
+    Caption = '版本'
+    ParentColor = False
+  end
+  object EdtVersion: TEdit
+    Left = 336
+    Height = 25
+    Hint = '输入"Z.版本号"或者"A.版本号"，例如Z.00或者A.00'
+    Top = 208
+    Width = 101
+    TabOrder = 21
+    OnChange = EdtVersionChange
+  end
+  object ChB_Basic: TCheckBox
+    Left = 75
+    Height = 21
+    Top = 261
+    Width = 71
+    Caption = 'IPS-basic'
+    TabOrder = 22
+    OnChange = ChB_BasicChange
+  end
+  object ChB_Businpub: TCheckBox
+    Left = 160
+    Height = 21
+    Top = 261
+    Width = 95
+    Caption = 'IPS-businpub'
+    TabOrder = 23
+    OnChange = ChB_BusinpubChange
+  end
+  object CheB_Equity: TCheckBox
+    Left = 272
+    Height = 21
+    Top = 261
+    Width = 76
+    Caption = 'IPS-equity'
+    TabOrder = 24
+    OnChange = CheB_EquityChange
+  end
+  object ChB_Equity_A: TCheckBox
+    Left = 368
+    Height = 21
+    Top = 261
+    Width = 89
+    Caption = 'IPS-equity-A'
+    TabOrder = 25
+    OnChange = ChB_Equity_AChange
+  end
+  object ChB_Equity_Comm: TCheckBox
+    Left = 480
+    Height = 21
+    Top = 261
+    Width = 134
+    Caption = 'IPS-equity-Common'
+    TabOrder = 26
+    OnChange = ChB_Equity_CommChange
+  end
+  object Label8: TLabel
+    Left = 4
+    Height = 17
+    Top = 261
+    Width = 60
+    Caption = '拉分支版本'
+    ParentColor = False
+  end
+  object Label9: TLabel
+    Left = 75
+    Height = 17
+    Top = 240
+    Width = 530
+    Caption = '提示：版本输入"Z.版本号"或者"A.版本号"，例如Z.00或者A.00，Z和A是用来决定Common的版本号'
+    ParentColor = False
+    OnClick = Label9Click
+  end
+  object Label11: TLabel
+    Left = 5
+    Height = 17
+    Top = 213
+    Width = 60
+    Caption = '自动拉分支'
+    ParentColor = False
+  end
+  object Label12: TLabel
+    Left = 200
+    Height = 17
+    Top = 57
+    Width = 72
+    Caption = '下拉选择分支'
+    ParentColor = False
+    OnClick = Label6Click
+  end
+  object ComboBox1: TComboBox
+    Left = 75
+    Height = 25
+    Top = 53
+    Width = 123
+    ItemHeight = 17
+    Style = csDropDownList
+    TabOrder = 27
+    OnChange = ComboBox1Change
+  end
+  object CheckBox1: TCheckBox
+    Left = 336
+    Height = 21
+    Top = 280
+    Width = 117
+    Caption = 'IPS-equity-server'
+    TabOrder = 28
+    OnChange = CheckBox1Change
+  end
+  object CheckBox2: TCheckBox
+    Left = 456
+    Height = 21
+    Top = 280
+    Width = 173
+    Caption = 'IPS-equity-server-common'
+    TabOrder = 29
+    OnChange = CheckBox2Change
+  end
+  object CheckBox3: TCheckBox
+    Left = 75
+    Height = 21
+    Top = 280
+    Width = 112
+    Caption = 'IPS-basic-server'
+    TabOrder = 30
+    OnChange = CheckBox3Change
+  end
+  object CheckBox4: TCheckBox
+    Left = 192
+    Height = 21
+    Top = 280
+    Width = 136
+    Caption = 'IPS-businpub-server'
+    TabOrder = 31
+    OnChange = CheckBox4Change
+  end
+  object Button2: TButton
+    Left = 517
+    Height = 25
+    Top = 88
+    Width = 88
+    Caption = '日志耗时分析'
+    TabOrder = 32
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 672
+    Height = 25
+    Top = 16
+    Width = 32
+    Caption = '...'
+    TabOrder = 33
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 629
+    Height = 25
+    Top = 128
+    Width = 75
+    Caption = '修改所有者'
+    TabOrder = 34
+    OnClick = Button4Click
+  end
+  object ActionList1: TActionList
+    Left = 25
+    Top = 393
+    object Action1: TAction
+      Caption = 'Action1'
+      Checked = True
+      Enabled = False
+      Hint = 'gddsdsf'
+      ImageIndex = 0
+      OnExecute = Action1Execute
+      OnUpdate = Action1Update
+    end
+  end
+  object SelectDirectoryDialog1: TSelectDirectoryDialog
+    OnClose = SelectDirectoryDialog1Close
+    FileName = 'C:\'
+    InitialDir = 'D:\'
+    OnSelectionChange = SelectDirectoryDialog1SelectionChange
+    Left = 672
+    Top = 48
+  end
+end

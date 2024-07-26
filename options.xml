@@ -1,0 +1,59 @@
+<root>
+	<!-- name:当前目录下的文件夹名  url: git网址  brunchName：分支名-->
+	<dev-trunk codepath="D:\Demo\MyGoWorkSpace">  
+    		<Variable  name ="UFT_basic"           url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-basic/UFT.git"             brunchName="dev-trunk"/>  
+    		<Variable  name ="UFT_businpub"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-businpub/UFT.git"          brunchName="dev-trunk"/>  
+   			<Variable  name ="UFT_equity_Z"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/UFT.git"            brunchName="dev-trunk"/>  
+    		<Variable  name ="UFT_equity_A"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/UFT.git"            brunchName="dev-trunk-A"/>  
+    		<Variable  name ="UFT-Common"          url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/UFT-Common.git"     brunchName="dev-trunk"/>  
+			<Variable  name ="Server_equity"       url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/Server.git"         brunchName="dev-trunk"/>  
+			<Variable  name ="Server_equity_A"     url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/Server.git"         brunchName="dev-trunk_A"/>  
+    		<Variable  name ="Server_Common"   	   url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/Server_common.git"  brunchName="dev-trunk"/>  
+   			<Variable  name ="Server_basic"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-basic/Server.git"          brunchName="dev-trunk"/>  
+			<Variable  name ="Server_businpub"     url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-businpub/Server.git"       brunchName="dev-trunk"/>  
+	</dev-trunk>                                                                                                                  
+	<dev-trunk-Y>                                                                                                                 
+    		<Variable  name ="UFT_basic"           url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-basic/UFT.git"             brunchName="dev-trunk-Y"/>  
+    		<Variable  name ="UFT_businpub"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-businpub/UFT.git"          brunchName="dev-trunk"/>  
+   			<Variable  name ="UFT_equity"          url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/UFT.git"            brunchName="dev-trunk-Y"/>  
+			<Variable  name ="Server_equity"       url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/Server.git"         brunchName="dev-trunk-Y"/>  
+   			<Variable  name ="Server_basic"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-basic/Server.git"          brunchName="dev-trunk-Y"/>  
+			<Variable  name ="Server_businpub"     url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-businpub/Server.git"       brunchName="dev-trunk-Y"/>  
+	</dev-trunk-Y>                                                                                                                
+	<release-trunk>                                                                                                               
+    		<Variable  name ="UFT_basic"           url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-basic/UFT.git"             brunchName="release-trunk"/>  
+    		<Variable  name ="UFT_businpub"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-businpub/UFT.git"          brunchName="release-trunk"/>  
+   			<Variable  name ="UFT_equity_Z"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/UFT.git"            brunchName="release-trunk"/>  
+    		<Variable  name ="UFT_equity_A"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/UFT.git"            brunchName="release-trunk-A"/>  
+    		<Variable  name ="UFT-Common"          url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/UFT-Common.git"     brunchName="release-trunk"/>  
+			<Variable  name ="Server_equity"       url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/Server.git"         brunchName="release-trunk"/>  
+			<Variable  name ="Server_equity_A"     url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/Server.git"         brunchName="release-trunk_A"/>  
+    		<Variable  name ="Server_Common"   	   url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/Server_common.git"  brunchName="release-trunk"/>  
+   			<Variable  name ="Server_basic"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-basic/Server.git"          brunchName="release-trunk"/>  
+			<Variable  name ="Server_businpub"     url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-businpub/Server.git"       brunchName="release-trunk"/>  
+	</release-trunk>                                                                                                              
+	<LS2400>                                                                                                                      
+    		<Variable  name ="UFT_basic"           url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-basic/UFT.git"             brunchName="dev-IPS1.0-basicV202401.00.000.LS"/>  
+    		<Variable  name ="UFT_businpub"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-businpub/UFT.git"          brunchName="dev-IPS1.0-businpubV202401.00.000.LS"/>  
+   			<Variable  name ="UFT_equity_Z"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/UFT.git"            brunchName="dev-IPS1.0-equityV202401Z.00.000.LS"/>  
+    		<Variable  name ="UFT_equity_A"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/UFT.git"            brunchName="dev-IPS1.0-equityV202401A.00.000.LS"/>  
+    		<Variable  name ="UFT-Common"          url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/UFT-Common.git"     brunchName="dev-IPS1.0-equityV202401Z.00.000.LS"/>  
+			<Variable  name ="Server_equity"       url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/Server.git"         brunchName="dev-IPS1.0-equityV202401Z.00.000.LS"/>  
+			<Variable  name ="Server_equity_A"     url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/Server.git"         brunchName="dev-IPS1.0-equityV202401A.00.000.LS"/>  
+    		<Variable  name ="Server_Common"   	   url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/Server_common.git"  brunchName="dev-IPS1.0-equityV202401Z.00.000.LS"/>  
+   			<Variable  name ="Server_basic"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-basic/Server.git"          brunchName="dev-IPS1.0-basicV202401.00.000.LS"/>  
+			<Variable  name ="Server_businpub"     url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-businpub/Server.git"       brunchName="dev-IPS1.0-businpubV202401.00.000.LS"/>  
+	</LS2400>                                                                                                                     
+	<LS2401>                                                                                                                      
+    		<Variable  name ="UFT_basic"           url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-basic/UFT.git"             brunchName="dev-IPS1.0-basicV202401.01.000.LS"/>  
+    		<Variable  name ="UFT_businpub"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-businpub/UFT.git"          brunchName="dev-IPS1.0-businpubV202401.01.000.LS"/>  
+   			<Variable  name ="UFT_equity_Z"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/UFT.git"            brunchName="dev-IPS1.0-equityV202401Z.01.000.LS"/>  
+    		<Variable  name ="UFT_equity_A"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/UFT.git"            brunchName="dev-IPS1.0-equityV202401A.01.000.LS"/>  
+    		<Variable  name ="UFT-Common"          url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/UFT-Common.git"     brunchName="dev-IPS1.0-equityV202401Z.01.000.LS"/>  
+			<Variable  name ="Server_equity"       url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/Server.git"         brunchName="dev-IPS1.0-equityV202401Z.01.000.LS"/>  
+			<Variable  name ="Server_equity_A"     url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/Server.git"         brunchName="dev-IPS1.0-equityV202401A.01.000.LS"/>  
+    		<Variable  name ="Server_Common"   	   url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-equity/Server_common.git"  brunchName="dev-IPS1.0-equityV202401Z.01.000.LS"/>  
+   			<Variable  name ="Server_basic"        url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-basic/Server.git"          brunchName="dev-IPS1.0-basicV202401.01.000.LS"/>  
+			<Variable  name ="Server_businpub"     url = "https://hsgit.hundsun.com/O45/IPS1.0/IPS1.0-businpub/Server.git"       brunchName="dev-IPS1.0-businpubV202401.01.000.LS"/>  
+	</LS2401>                                                                                                                                                  
+</root>  

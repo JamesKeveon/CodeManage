@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="CodeManage.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="217"/>
+      </Unit>
+      <Unit>
+        <Filename Value="form.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="278"/>
+        <CursorPos X="25" Y="278"/>
+        <UsageCount Value="217"/>
+      </Unit>
+      <Unit>
+        <Filename Value="form.lfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="361"/>
+        <CursorPos X="37" Y="3"/>
+        <UsageCount Value="87"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
+    <JumpHistory HistoryIndex="-1"/>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
