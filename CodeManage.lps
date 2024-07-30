@@ -8,8 +8,8 @@
       <Unit>
         <Filename Value="CodeManage.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
         <UsageCount Value="217"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="form.pas"/>
@@ -18,11 +18,13 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
         <TopLine Value="278"/>
-        <CursorPos X="25" Y="278"/>
+        <CursorPos X="3" Y="280"/>
         <UsageCount Value="217"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="form.lfm"/>
@@ -33,10 +35,12 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="-1"/>
-    </General>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory>
+      <Position>
+        <Filename Value="form.pas"/>
+        <Caret Line="279" Column="35" TopLine="278"/>
+      </Position>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>
