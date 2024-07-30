@@ -1422,10 +1422,20 @@ func Link(from, to string) error {
 			srcPath := filepath.Join(from, item.Name())
 			dstPath := filepath.Join(to, item.Name())
 			if e := Link(srcPath, dstPath); e != nil {
-				return e
+				//return e
 			}
 		}
 	} else {
+		// 文件存在，尝试删除
+		if _, err := os.Stat(to); os.IsNotExist(err) {
+			fmt.Printf("File '%s' does not exist.\n", to)
+		} else {
+			err := os.Remove(to)
+			if err != nil {
+				log.Fatalf("Error removing file: %v", err)
+			}
+			fmt.Printf("File '%s' has been successfully removed.\n", to)
+		}
 		// Create a symbolic link for the file
 		if e := os.Symlink(from, to); e != nil {
 			return e
