@@ -40,7 +40,6 @@ func (f *TForm1) OnFormCreate(sender vcl.IObject) {
 	atom_2 = false
 	isDownload = false
 	isPullFlag = false
-
 	f.Button1.SetAction(f.Action1)
 	f.Button1.Hide()
 
